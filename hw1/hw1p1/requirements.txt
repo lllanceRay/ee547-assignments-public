@@ -1,0 +1,4 @@
+pytest
+pytest-json-report
+pytest-custom_exit_code
+python-prctl

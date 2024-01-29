@@ -8,7 +8,7 @@ PYTEST_OPTS="$PYTEST_OPTS --cache-clear -rA --capture=no --show-capture=no --tb=
 PYTEST_OPTS="$PYTEST_OPTS --json-report --json-report-file=$REPORT --json-report-omit collectors keywords"
 PYTEST_OPTS="$PYTEST_OPTS --suppress-tests-failed-exit-code"
 
-[ -f requirements.txt ] && sudo pip3 install --user autograde -r requirements.txt
+[ -f requirements.txt ] && pip3 install -r requirements.txt
 
 start=`date +%s`
 pytest $PYTEST_OPTS . > "$OUTPUT" 2>&1
