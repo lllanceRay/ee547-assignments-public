@@ -20,7 +20,8 @@ Install dependencies
 ```bash
 apt-get update
 apt-get install -y \
-  jq
+  jq \
+  libcap-dev
 ```
 
 
